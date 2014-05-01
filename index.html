@@ -11,6 +11,10 @@ html {
     -webkit-user-select: none;
     user-select: none;
 }
+menu {
+    text-align: center;
+    display: none;
+}
 #c {
     position: absolute;
     top: 50%;
@@ -24,9 +28,12 @@ html {
 </style>
 
 <script src="lib/geometry.js"></script>
+<script src="lib/filters.js"></script>
 <script src="lib/wmask.js"></script>
 
-<canvas id="c" width="800" height="600">You dun goof'd.</canvas>
-<canvas id="clipboard" width="0", height="0"></canvas>
+<menu id="menu" type="toolbar">
+    <button id="filter-noop" disabled>Noop</button>
+    <button id="filter-negate" disabled>Negate</button>
+</menu>
 
-<p id="l"></p>
+<canvas id="c" width="800" height="600">You dun goof'd.</canvas>
