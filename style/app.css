@@ -1,0 +1,61 @@
+html {
+    background: #f0f0f0;
+}
+* {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+menu {
+    text-align: center;
+    display: none;
+}
+#c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    color: #333;
+    font: normal bold 200px cursive;
+}
+
+button {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
+
+button:not([disabled]) {
+    cursor: pointer;
+}
+
+.icon {
+    text-indent: -999px;
+    overflow: hidden;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+}
+
+.icon.save { background-image: url(download.png); }
+.icon.undo { background-image: url(undo.png); }
+.icon.redo { background-image: url(repeat.png); }
+.icon.zoomin { background-image: url(search-plus.png); }
+.icon.zoomout { background-image: url(search-minus.png); }
+.icon.hflip { background-image: url(arrows-h.png); }
+.icon.vflip { background-image: url(arrows-v.png); }
+.icon.vglass { background-image: url(align-justify-rotated.png); }
+.icon.hglass { background-image: url(align-justify.png); }
+.icon.win { background-image: url(barcode.png); }

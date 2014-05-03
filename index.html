@@ -1,31 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <title>wmask</title>
-
-<style>
-html {
-    background: #f0f0f0;
-}
-* {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-menu {
-    text-align: center;
-    display: none;
-}
-#c {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -300px 0 0 -400px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    text-align: center;
-    color: #333;
-    font: normal bold 200px cursive;
-}
-</style>
+<link rel="stylesheet" href="style/app.css">
 
 <script src="lib/geometry.js"></script>
 <script src="lib/mask.js"></script>
@@ -33,13 +9,24 @@ menu {
 <script src="lib/wmask.js"></script>
 
 <menu id="menu" type="toolbar">
+    <button id="action-save" class="icon save" disabled>Save</button>
+    <button id="action-undo" class="icon undo" disabled>Undo</button>
+    <button id="action-redo" class="icon redo" disabled>Redo</button>
+    <button id="action-zoomin" class="icon zoomin" disabled>Zoom+</button>
+    <button id="action-zoomout" class="icon zoomout" disabled>Zoom-</button>
+    <button id="mask-rgb" disabled>RGB</button>
+    <button id="mask-xor" disabled>XOR</button>
+    <button id="mask-hflip" class="icon hflip" disabled>hFlip</button>
+    <button id="mask-vflip" class="icon vflip" disabled>vFlip</button>
     <button id="mask-neg" disabled>Neg</button>
-    <button id="mask-xor" disabled>Xor</button>
-    <button id="mask-rgb" disabled>Rgb</button>
-    <button id="mask-hflip" disabled>hFlip</button>
-    <button id="mask-vflip" disabled>vFlip</button>
-    <button id="mask-hglass" disabled>hGlass</button>
-    <button id="mask-vglass" disabled>vGlass</button>
+    <button id="mask-vglass" class="icon vglass" disabled>vGlass</button>
+    <button id="mask-hglass" class="icon hglass" disabled>hGlass</button>
+    <button id="mask-win" class="icon win" disabled>Win</button>
+    <button id="mask-mekom" disabled>M-</button>
+    <button id="mask-mekop" disabled>M+</button>
+    <button id="mask-fl" disabled>FL</button>
+    <button id="mask-q0" disabled>Q0</button>
+    <button id="mask-cp" disabled>CP</button>
 </menu>
 
 <canvas id="c" width="800" height="600">You dun goof'd.</canvas>
