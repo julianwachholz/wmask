@@ -1,15 +1,18 @@
 html {
     background: #f0f0f0;
 }
+
 * {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
+
 menu {
     text-align: center;
     display: none;
 }
+
 #c {
     position: absolute;
     top: 50%;
@@ -59,3 +62,11 @@ button:not([disabled]) {
 .icon.vglass { background-image: url(align-justify-rotated.png); }
 .icon.hglass { background-image: url(align-justify.png); }
 .icon.win { background-image: url(barcode.png); }
+
+.dnt-button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+}
