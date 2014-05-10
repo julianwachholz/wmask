@@ -1,0 +1,3 @@
+[submodule "vendor/webm-encoder"]
+	path = vendor/webm-encoder
+	url = https://github.com/antimatter15/whammy.git
