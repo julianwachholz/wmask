@@ -72,3 +72,8 @@ button:not([disabled]) {
     margin-left: -150px;
     width: 300px;
 }
+
+.cancel-button {
+    width: 300px;
+    background: #ff5f5f;
+}
