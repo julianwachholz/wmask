@@ -14,15 +14,15 @@ Features
 All of the following features have been implemented and are working as they
 should:
 
-- [x] XOR 0x80
-- [x] XOR 0xFF (Negate colours)
-- [x] RGB Channel swap
-- [x] Flip horizontally and vertically
-- [x] Vertical and horizontal glass blocks
-- [x] Win mask
-- [x] Meko mask
-- [x] FL mask
-- [x] CP mask (password protection)
+- XOR 0x80
+- XOR 0xFF (Negate colours)
+- RGB Channel swap
+- Flip horizontally and vertically
+- Vertical and horizontal glass blocks
+- Win mask
+- Meko mask
+- FL mask
+- CP mask (password protection)
 
 
 Video support
