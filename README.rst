@@ -55,6 +55,16 @@ honoured. If your browser does not support DNT, you can also access the site
 with ``#dnt`` in the URL to trigger the same effect: https://wmask.ju.io/#dnt
 
 
+Todo
+----
+
+A short and incomplete list of things I want to implement in this tool:
+
+- Web Workers
+- GIF support, if feasible
+- ...
+
+
 License
 -------
 
@@ -62,3 +72,9 @@ Released under the GPLv3 license. See `LICENSE`_ for further details.
 
 
 .. _LICENSE: https://github.com/julianwachholz/wmask/blob/master/LICENSE
+
+
+Contributing
+------------
+
+Yes, please. Any improvement or recommendation is welcome.
