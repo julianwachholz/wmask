@@ -522,7 +522,7 @@ window.Whammy = (function(){
 	};
 
 	// deferred webp encoding. Draws image data to canvas, then encodes as dataUrl
-	WhammyVideo.prototype.encodeFrames = function(callback){
+	WhammyVideo.prototype.encodeFrames = function(callback, progress){
 
 		if(this.frames[0].image instanceof ImageData){
 
@@ -534,6 +534,11 @@ window.Whammy = (function(){
 
 			var encodeFrame = function(index){
 				console.log('encodeFrame', index);
+				if (progress !== undefined) {
+					setTimeout(function () {
+						progress(index);
+					}, 1);
+				}
 				var frame = frames[index];
 				tmpContext.putImageData(frame.image, 0, 0);
 				frame.image = tmpCanvas.toDataURL('image/webp', this.quality);
@@ -550,7 +555,7 @@ window.Whammy = (function(){
 		}
 	};
 
-	WhammyVideo.prototype.compile = function(outputAsArray, callback){
+	WhammyVideo.prototype.compile = function(outputAsArray, callback, progress){
 
 		this.encodeFrames(function(){
 
@@ -561,7 +566,7 @@ window.Whammy = (function(){
 			}), outputAsArray);
 			callback(webm);
 
-		}.bind(this));
+		}.bind(this), progress);
 	};
 
 	return {
