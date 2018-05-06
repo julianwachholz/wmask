@@ -1,17 +1,21 @@
 <!doctype html>
-<meta charset="utf-8">
-<title>wmask</title>
-<link rel="stylesheet" href="style/app.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>wmask</title>
+  <meta name="description" content="Use GMask online in your browser. wmask lets you modify images online without any software downloads. It implements the ancient GMask tool. Also supports videos.">
+  <link rel="stylesheet" href="style/app.css">
 
-<script src="vendor/webm-encoder/whammy.js"></script>
+  <script src="vendor/webm-encoder/whammy.js"></script>
 
-<script src="lib/geometry.js"></script>
-<script src="lib/constants.js"></script>
-<script src="lib/masks.js"></script>
-<script src="lib/wmask.js"></script>
-<script async src="analytics.js"></script>
-
-<menu id="menu" type="toolbar">
+  <script src="lib/geometry.js"></script>
+  <script src="lib/constants.js"></script>
+  <script src="lib/masks.js"></script>
+  <script src="lib/wmask.js"></script>
+  <script async src="analytics.js"></script>
+</head
+<body>
+  <menu id="menu" type="toolbar">
     <button id="action-save" class="icon save">Save</button>
     <button id="action-undo" class="icon undo" disabled>Undo</button>
     <button id="action-redo" class="icon redo" disabled>Redo</button>
@@ -30,10 +34,12 @@
     <button id="mask-fl" disabled>FL</button>
     <button id="mask-q0" disabled>Q0</button>
     <button id="mask-cp" disabled>CP</button>
-</menu>
+  </menu>
 
-<menu id="cancelmenu" type="toolbar">
+  <menu id="cancelmenu" type="toolbar">
     <button id="action-cancel" class="cancel-button">Cancel</button>
-</menu>
+  </menu>
 
-<canvas id="c" width="800" height="600">You dun goof'd.</canvas>
+  <canvas id="c" width="800" height="600">You dun goof'd.</canvas>
+</body>
+</html>

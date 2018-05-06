@@ -1,5 +1,5 @@
 html {
-    background: #f0f0f0;
+    background: #fff;
 }
 
 * {
@@ -20,9 +20,9 @@ canvas {
     top: 50%;
     left: 50%;
     margin: -300px 0 0 -400px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     text-align: center;
-    color: #333;
+    color: #4a4a4a;
     font: normal bold 200px cursive;
 }
 
